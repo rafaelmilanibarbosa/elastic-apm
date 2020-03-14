@@ -1,5 +1,5 @@
 {
-   "name":"philkra/elastic-apm-laravel",
+   "name":"rafaelmilanibarbosa/elastic-apm",
    "keywords":[  
       "laravel",
       "elastic",
@@ -24,21 +24,21 @@
    },
    "autoload":{  
       "psr-4":{  
-         "PhilKra\\ElasticApmLaravel\\":"src/"
+         "RafaelMilaniBarbosa\\ElasticApm\\":"src/"
       }
    },
    "autoload-dev":{  
       "psr-4":{  
-         "PhilKra\\Tests\\":"tests/"
+         "RafaelMilaniBarbosa\\Tests\\":"tests/"
       }
    },
    "extra":{  
       "laravel":{  
          "providers":[  
-            "PhilKra\\ElasticApmLaravel\\Providers\\ElasticApmServiceProvider"
+            "RafaelMilaniBarbosa\\ElasticApm\\Providers\\ElasticApmServiceProvider"
          ],
          "aliases":{  
-            "ElasticApm":"PhilKra\\ElasticApmLaravel\\Facades\\ElasticApm"
+            "ElasticApm":"RafaelMilaniBarbosa\\ElasticApm\\Facades\\ElasticApm"
          }
       }
    },
@@ -47,13 +47,9 @@
    },
    "authors":[  
       {  
-         "name":"Philip Krauss",
-         "email":"philip@philipkrauss.at",
-         "homepage":"https://github.com/philkra/elastic-apm-laravel"
-      },
-      {  
-         "name":"George Boot",
-         "email":"george@entryninja.com"
+         "name":"Rafael Milani Barbosa",
+         "email":"rafaelmilanib@gmail.com",
+         "homepage":"https://github.com/rafaelmilanibarbosa/elastic-apm"
       }
    ]
 }

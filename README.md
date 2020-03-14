@@ -4,7 +4,7 @@ Tested with Laravel `5.6.*` and the philkra/elastic-apm-php-agent version `6.2.*
 
 ## Install
 ```
-composer require philkra/elastic-apm-laravel
+composer require rafaelmilanibarbosa/elastic-apm
 ```
 
 ## Middleware
@@ -15,15 +15,15 @@ Register the middleware in `app/Http/Kernel.php`
 ```php
 protected $middleware = [
     // ... more middleware
-    \PhilKra\ElasticApmLaravel\Middleware\RecordTransaction::class,
+    \RafaelMilaniBarbosa\ElasticApm\Middleware\RecordTransaction::class,
 ];
 ```
 
 ### Lumen
-In `bootstrap/app.php` register `PhilKra\ElasticApmLaravel\Middleware\RecordTransaction::class` as middleware:
+In `bootstrap/app.php` register `RafaelMilaniBarbosa\ElasticApm\Middleware\RecordTransaction::class` as middleware:
 ```php
 $app->middleware([
-    PhilKra\ElasticApmLaravel\Middleware\RecordTransaction::class
+    RafaelMilaniBarbosa\ElasticApm\Middleware\RecordTransaction::class
 ]);
 ```
 

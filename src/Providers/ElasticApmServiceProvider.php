@@ -1,12 +1,12 @@
 <?php
 
-namespace PhilKra\ElasticApmLaravel\Providers;
+namespace RafaelMilaniBarbosa\ElasticApm\Providers;
 
 use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
 use PhilKra\Agent;
-use PhilKra\ElasticApmLaravel\Contracts\VersionResolver;
+use RafaelMilaniBarbosa\ElasticApm\Contracts\VersionResolver;
 use PhilKra\Helper\Timer;
 
 class ElasticApmServiceProvider extends ServiceProvider
